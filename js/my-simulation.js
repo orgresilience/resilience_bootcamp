@@ -132,7 +132,7 @@ function initSimulation() {
   }
 
   function sendEmail(E_hist, O_hist, M_hist, S_hist, R_hist) {
-    emailjs.init("UjOAvsOdS6Syhwa_n"); // Replace with your EmailJS user ID
+    emailjs.init(""); // Replace with your EmailJS user ID
 
     const csvData   = convertToCSV(E_hist, O_hist, M_hist, S_hist, R_hist);
     const base64CSV = btoa(unescape(encodeURIComponent(csvData)));
